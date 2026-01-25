@@ -27,6 +27,7 @@ def _download_kustomize_impl(ctx):
 
     ctx.file("BUILD", """
 load("@rules_shell//shell:sh_binary.bzl", "sh_binary")
+
 sh_binary(
     name = "kustomize",
     srcs = ["bin/kustomize"],
